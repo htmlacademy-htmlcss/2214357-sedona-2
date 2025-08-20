@@ -1,9 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Виталий Макаров](https://up.htmlacademy.ru/htmlcss-individual/2/user/2214357).
-* Наставник: `Неизвестно`.
-
----
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab)
+* Сайт: [Проект Седона](https://vitali3207.github.io/2214357-sedona-2/)
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
