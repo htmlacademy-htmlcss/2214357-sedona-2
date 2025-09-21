@@ -234,6 +234,7 @@ body {
   min-height: 385px;
   box-sizing: border-box;
   padding: 102px 74px;
+  background-color: #83B3D31F;
 }
 
 .advantages-item:nth-child(3) {
@@ -428,24 +429,27 @@ body {
 .newsletter-form {
   margin: 0;
   display: flex;
+  justify-content: center;
+
 }
 
 .field {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
   width: 452px;
-  padding: 14px 20px;
+  padding: 14px 21px;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 4px 0 0 4px;
   outline: none;
-  background-color: #f2f2f2;
+
 }
 
 .field::placeholder {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  opacity: 0.6;
 }
 
 .page-footer {
@@ -558,7 +562,6 @@ body {
   margin-right: 70px;
 }
 
-
 .group-title {
   font-weight: 700;
   font-size: 20px;
@@ -568,6 +571,11 @@ body {
   margin-bottom: 32px;
 }
 
+.group-item {
+  display: flex;
+  align-items: center;
+}
+
 .group-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -575,6 +583,7 @@ body {
 .input-text{
   line-height: 23px;
   color: #ffffff;
+  margin-left: 16px;
 }
 
 input[type= "checkbox"] {
@@ -614,7 +623,7 @@ input[type= "radio"]:checked {
   width: 288px;
   display: flex;
   gap: 2px;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 
 input::-webkit-outer-spin-button,
@@ -631,9 +640,7 @@ input[type='number'] {
   position: absolute;
   left: 108px;
   top: 13px;
-  z-index: 1;
-  font-size: 18px;
-  line-height: 24px;
+  opacity: 0.3;
 }
 
 .input-from {
@@ -645,7 +652,7 @@ input[type='number'] {
   position: absolute;
   left: 250px;
   top: 13px;
-  z-index: 1;
+  opacity: 0.3;
 }
 
 .input-to {
@@ -667,27 +674,49 @@ input[type= "number"] {
 }
 
 input[type=range] {
+  position: absolute;
+  width: 287px;
   height: 4px;
   appearance: none;
+  background-color: #ffffff;
+  opacity: 0.3;
 }
 
-/*webkit*/
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
+input[type='range']::-webkit-slider-thumb {
+-webkit-appearance: none;
+}
+
+.scale-progres {
+  width: 226px;
+  height: 4px;
+  background-color: #ffffff;
+  position: relative;
+  bottom: -2px;
+  right: -3px;
+}
+
+.scale-progres::before {
+  content: "";
+  display: block;
+  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  background: #FFFFFF;
-  border: none;
-  margin-top: -8px
+  background-color: #ffffff;
+  top: -7px;
+  left: 206px;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-  height: 4px;
-  border: none;
-  border-radius: 0;
-  background: #969696;
-  box-shadow: none;
+.scale-progres::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  top: -7px;
+  left: -1px;
 }
 
 .filter-button {
